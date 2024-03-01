@@ -1,0 +1,22 @@
+﻿<Window x:Class="Background_Changer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Background_Changer"
+        mc:Ignorable="d"
+        Title="Background Changer" Height="214" Width="480"
+        ResizeMode="NoResize">
+    <Grid>
+        <Button x:Name="ChangeButton" Content="Change Background" HorizontalAlignment="Left" Margin="317,134,0,0" VerticalAlignment="Top" Width="138" IsEnabled="False" Click="ChangeButton_Click"/>
+        <Label Content="Source:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="49"/>
+        <Button Content="Browse..." HorizontalAlignment="Left" Margin="62,36,0,0" VerticalAlignment="Top" Width="138" Click="Button_Click"/>
+        <Button Content="Use Default" HorizontalAlignment="Left" Margin="62,61,0,0" VerticalAlignment="Top" Width="138" Click="Button_Click_2"/>
+        <Label Content="Default:" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="154"/>
+        <Label x:Name="source" Content="None" HorizontalAlignment="Left" Margin="62,10,0,0" VerticalAlignment="Top" Width="361" Tag="Source" FontSize="9"/>
+        <Button Content="Set Default..." HorizontalAlignment="Left" Margin="15,139,0,0" VerticalAlignment="Top" Width="135" Click="Button_Click_1"/>
+        <Label x:Name="source_Default" Content="None" HorizontalAlignment="Left" Margin="15,112,0,0" VerticalAlignment="Top" Width="215" Tag="Source" FontSize="9"/>
+        <Image x:Name="Preview" HorizontalAlignment="Left" Height="75" Margin="349,46,0,0" VerticalAlignment="Top" Width="77"/>
+
+    </Grid>
+</Window>
